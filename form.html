@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>CatEnergy</title>
+</head>
+
+<body>
+<header class="page-header">
+    <a class="page-header__logo">
+        <img src="#" class="page-header__logo-image">
+    </a>
+    <h1 class="page-header__title">Cat Energy</h1>
+    <nav class="main-nav">
+        <button class="main-nav__toggle"></button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Каталог продуктов</a>
+                </li>
+                <li class="site-list__item--active">
+                    <a href="#">Подбор программы</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="page-form">
+    <section class="program-selection">
+        <h2 class="program-selection__title">Подбор программы</h2>
+        <p class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </section>
+    <section class="form">
+        <form method="post" class="form-body">
+            <section class="about-cat">
+                <ul class="about-cat__cat-info">
+                    <li class="about-cat__name">
+                        <label class="about-cat__label" for="cat-name">Имя*</label>
+                        <input class="about-cat__input" type="text" value="Барсик" name="Cat name" id="cat-name">
+                    </li>
+                    <li class="about-cat__weight">
+                        <label class="about-cat__label" for="cat-weight">Вес (кг):*</label>
+                        <input class="about-cat__input" type="text" value="7" name="Cat weight" id="cat-weight">
+                    </li>
+                    <li class="about-cat__age">
+                        <label class="about-cat__label" for="cat-age">Возраст (лет):</label>
+                        <input class="about-cat__input" type="text" value="7" name="Cat age" id="cat-age">
+                    </li>
+                </ul>
+                <ul class="about-cat__radio-selector radio-selector">
+                    <li class="radio-selector__item">
+                        <input type="radio" value="slim" name="program-selector" id="slim" checked>
+                        <label class="" for="slim">Похудение</label>
+                    </li>
+                    <li class="radio-selector__item">
+                        <input type="radio" value="fat" name="program-selector" id="fat">
+                        <label class="" for="fat">Набор массы</label>
+                    </li>
+                    <li class="radio-selector__item">
+                        <input type="radio" value="dont-know" name="program-selector" id="dont-know">
+                        <label class="" for="dont-know">Не знаю (Нужен ваш совет)</label>
+                    </li>
+                </ul>
+            </section>
+            <section class="cat-owner">
+                <h3 class="cat-owner__title">Контактные данные (владельца кота)</h3>
+                <ul class="cat-owner__form">
+                    <li class="cat-owner__email">
+                        <label class="cat-owner__email-label" for="cat-owner__email">E-mail:*</label>
+                        <input class="cat-owner__email-field" type="email" value="kuklachev@gmail.com" id="cat-owner__email">
+                    </li>
+                    <li class="cat-owner__phone">
+                        <label class="cat-owner__phone-label" for="cat-owner__phone">Телефон:*</label>
+                        <input class="cat-owner__phone-field" type="tel" value="8 (960) 900-60-90" id="cat-owner__phone">
+                    </li>
+                </ul>
+            </section>
+            <section class="comment">
+                <h3 class="comment__title">Комментарий</h3>
+                <textarea class="comment__text" value="Расскажите обо всех повадках кота"></textarea>
+            </section>
+            <section class="additional">
+                <h3 class="additional__title">Дополнительно</h3>
+                <ul class="additional__list">
+                    <li class="additional__item">
+                        <input class="" type="checkbox" id="add-sugar">
+                        <label class="additional__sugar" for="add-sugar">Сахарозаменитель</label>
+                    </li>
+                    <li class="additional__item">
+                        <input class="" type="checkbox" id="add-water">
+                        <label class="additional__water" for="add-water">Питьевая вода</label>
+                    </li>
+                    <li class="additional__item">
+                        <input class="" type="checkbox" id="add-milk">
+                        <label class="additional__milk" for="add-milk">Молоко</label>
+                    </li>
+                    <li class="additional__item">
+                        <input class="" type="checkbox" id="add-vitamins">
+                        <label class="additional__vitamins" for="add-vitamins">Витамины</label>
+                    </li>
+                </ul>
+                <input class="form-submit button" type="submit" value="Отправить заявку">
+                <p class="form-legend"></p>
+            </section>
+        </form>
+
+        <section class="map">
+            <img class="map-image" src="#">
+        </section>
+
+        <footer class="page-footer">
+            <h2 class="page-footer__title">Cat Energy</h2>
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link--vk" href="#"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link--insta" href="#"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link--fb" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__name">HTML Academy</b>
+                <b class="copyright__logo"></b>
+            </div>
+        </footer>
+    </section>
+</main>
+
+</body>
