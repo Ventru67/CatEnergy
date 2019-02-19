@@ -2,20 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>CatEnergy</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 <header class="page-header">
-    <a class="page-header__logo">
-        <img src="#" class="page-header__logo-image">
-    </a>
-    <h1 class="page-header__title">Cat Energy</h1>
+    <div class="page-header__mobile-wrapper main-nav--closed">
+        <a class="page-header__logo">
+            <img src="./img/logo-mobile.svg" class="page-header__logo-image" width="33" height="38" alt="CatEnergy Logo">
+        </a>
+        <img src="./img/logo-mobile-header.svg" class="page-header__logo-title" width="101" height="18" alt="Cat Energy">
+        <button class="page-header__nav-toggle"></button>
+    </div>
     <nav class="main-nav">
-        <button class="main-nav__toggle"></button>
         <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-                <li class="site-list__item--active">
+                <li class="site-list__item site-list__item--active">
                     <a href="#">Главная</a>
                 </li>
                 <li class="site-list__item">
@@ -27,14 +31,17 @@
             </ul>
         </div>
     </nav>
+    </div>
 </header>
 
 <main class="page-main">
     <section class="promo">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a class="promo__button">Подобрать программу</a>
-        <img src="" class="promo__image" alt="<Упаковка корма">
+        <div class="promo-wrapper">
+            <h1 class="promo__title">Функциональное<br> питание для котов</h1>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <img src="./img/index-can-mobile.png" class="promo__image" alt="Упаковка корма">
+            <a class="promo__button">Подобрать программу</a>
+        </div>
     </section>
 
     <section class="programs">
